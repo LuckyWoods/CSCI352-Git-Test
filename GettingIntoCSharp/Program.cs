@@ -26,21 +26,22 @@ namespace GettingIntoCSharp
             int randomNum = 1;
             Random numberGuess = new Random();
             int guessCount = 0;
-            while (guessNum != numberGuess.Next(0, 101));
+            int ranNumber = numberGuess.Next(0, 101);
+            while (guessNum != ranNumber)
             {
                 Console.WriteLine("Guess a number between 0 to 100.");
-                string intConvert= Console.ReadLine();
+                string intConvert = Console.ReadLine();
 
-                guessNum = toInteger(intConvert);
+                guessNum = int.Parse(intConvert);
 
                 guessCount++;
 
-                if(guessNum < randomNum)
+                if(guessNum < ranNumber)
                 {
                     Console.WriteLine("Guess is too low!");
 
                 }
-                else if(guessNum > randomNum)
+                else if(guessNum > ranNumber)
                 {
                     Console.WriteLine("Guess is too high!");
                 }
