@@ -5,7 +5,8 @@ using System.Text;
 namespace GettingIntoCSharp
 {
     class Cat
-    {
+    {   
+        /*
         private string name;
         public Cat()
         {
@@ -23,5 +24,9 @@ namespace GettingIntoCSharp
             Console.WriteLine("This cat's name is: " + name);
 
         }
+        */
+
+
+
     }
 }
