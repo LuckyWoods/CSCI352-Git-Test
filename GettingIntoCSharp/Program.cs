@@ -24,10 +24,14 @@ namespace GettingIntoCSharp
         {
             int guessNum = 0;
             int randomNum = 1;
+            Random numberGuess = new Random();
             int guessCount = 0;
-            while (guessNum != randomNum){
+            while (guessNum != numberGuess.Next(0, 101));
+            {
                 Console.WriteLine("Guess a number between 0 to 100.");
-                guessNum = Console.ReadLine();
+                string intConvert= Console.ReadLine();
+
+                guessNum = toInteger(intConvert);
 
                 guessCount++;
 
