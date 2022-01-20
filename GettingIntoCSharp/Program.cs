@@ -23,13 +23,22 @@ namespace GettingIntoCSharp
         static void Main(string[] args)
         {
             int guessNum = 0;
-            int randomNum = 1;
             Random numberGuess = new Random();
             int guessCount = 0;
-            int ranNumber = numberGuess.Next(0, 101);
+
+
+            Console.WriteLine("What is lowest number to guess?");
+            string intConvertX = Console.ReadLine();
+            int x = int.Parse(intConvertX);
+            Console.WriteLine("What is highest number to guess?");
+            string intConvertY = Console.ReadLine();
+            int y = int.Parse(intConvertY);
+
+
+            int ranNumber = numberGuess.Next(x, y);
             while (guessNum != ranNumber)
             {
-                Console.WriteLine("Guess a number between 0 to 100.");
+                Console.WriteLine("Guess a number between " + x + " to " + y + ".");
                 string intConvert = Console.ReadLine();
 
                 guessNum = int.Parse(intConvert);

@@ -5,4 +5,8 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Include="C:\Users\meggo\OneDrive\Documents\SchoolWork\ProgramOnPC1.cs" Link="ProgramOnPC1.cs" />
+  </ItemGroup>
+
 </Project>
